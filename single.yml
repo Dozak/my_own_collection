@@ -1,0 +1,11 @@
+---
+- name: test module
+  hosts: localhost
+  tasks:
+    - name: run my module
+      my_new_module:
+        #name: "hello"
+        #new: true
+        path: "/tmp/file.txt"
+        content: "hello world"
+
